@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Centro Medico Galenos</title>
+
+    <!-- Estilos y fuentes del template  -->
+    <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="static/assets/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Favicon icon -->
+    <link rel="icon" href="/static/assets/images/logo-favicon.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'page_principal' %}">Centro Medico Galenos</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menú
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page_principal' %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'page_sucursal' %}">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">LogIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cabecera -->
+    <header class="masthead" style="background-image: url('static/assets/images/img-pagina-principal.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Bienvenido</h1>
+              <span class="subheading">Toma Hora ingresando desde nuestro Login</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+      <div class="row"> 
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="static/assets/images/car.jpg" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiologia en todos nuestros centro de atencion.</h5>
+                <a href="" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="static/assets/images/endo.jpg" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Endocrinología y Nutrición en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Geriatría en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Reaumatología en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hematología y Hemoterapia en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pediatría en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Oncología Médica en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="" class="card-img-top margen-imagen" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Oncología Radioterápica en todos nuestros centro de atencion.</h5>
+                <a href="#" class="btn btn-primary btn-margen">Agendar Hora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+
+    <hr>
+
+    <!-- Pié de página -->
+    <footer style="background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                <contacto style="color: aliceblue;">+09 963 543 345</contacto>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                <contacto style="color: aliceblue;">contacto@cmgalenos.cl</contacto>
+              </li>
+            </ul>
+            <p class="copyright text-muted">&copy; IMG SOFTWARE - Todos los derechos reservados.  </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap y Javascripts -->
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
