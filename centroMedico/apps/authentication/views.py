@@ -37,13 +37,13 @@ def register_user(request):
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)
 
-            msg = 'User created - please <a href="/login">login</a>.'
+            msg = 'Usuario Creado <a href="/login">login</a>.'
             success = True
 
             # return redirect("/login/")
 
         else:
-            msg = 'Form is not valid'
+            msg = 'Datos Invalidos'
     else:
         form = SignUpForm()
 
