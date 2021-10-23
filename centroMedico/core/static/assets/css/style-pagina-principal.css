@@ -8292,4 +8292,15 @@
           outline: none !important; }
     .footer-04 .copyright a {
       color: rgba(255, 255, 255, 0.5); }
-  
+
+/**estilos css ignacio**/
+.margen-top{
+  margin-top: 100px;
+}
+.text{
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: arial;
+  font-size: 20px;
+}

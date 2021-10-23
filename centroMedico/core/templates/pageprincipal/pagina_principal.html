@@ -19,6 +19,7 @@
   <link href="static/assets/css/clean-blog.min.css" rel="stylesheet">
   <link href="static/assets/css/style-pagina-principal.css" rel="stylesheet">
   <link href="static/assets/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/assets/css/animate.css" rel="stylesheet">
 
   <!-- Favicon icon -->
   <link rel="icon" href="/static/assets/images/logo-favicon.png" type="image/x-icon">
@@ -28,30 +29,7 @@
 <body>
 
   <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'page_principal' %}">Centro Medico Galenos</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menú
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'page_principal' %}">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'page_sucursal' %}">Sucursales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'login' %}">LogIn</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {% include './partials/_nav.html' %}
 
   <!-- Cabecera -->
   <header class="masthead" style="background-image: url('static/assets/images/centro-3.jpg')">
@@ -60,8 +38,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Bienvenido</h1>
-            <span class="subheading">Toma Hora ingresando desde nuestro Login</span>
+            <h1 class="animate__animated animate__fadeInDown">Bienvenido</h1>
+            <span class="subheading animate__animated animate__fadeIn">Toma Hora ingresando desde nuestro Login</span>
           </div>
         </div>
       </div>
@@ -70,41 +48,41 @@
 
   <!-- Contenido Principal -->
   <div class="container">
+    <p class="text">El Centro Médico Galenos comenzó como una empresa familiar que se dedicaba a facilitar espacios totalmente implementados en su edificio a médicos generales y de especialidad en los cuales podían desempeñar su labor en forma independiente, pero con el tiempo crecimos tanto que hoy nos convertimos un un gran centro medico con una infinidad de profesionales y varias sucursales para estar mas cerca de quien nos necesite</p>
     <div class="row">
-
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="static/assets/images/car.jpg" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Cardiologia en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Medicina general.</h5>
 
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="static/assets/images/endo.jpg" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Endocrinología y Nutrición en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Cardiologia.</h5>
               
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Geriatría en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">kinesiología.</h5>
               
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Reaumatología en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Oftalmología.</h5>
               
             </div>
           </div>
@@ -114,36 +92,36 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Hematología y Hemoterapia en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">otorrinolaringología.</h5>
               
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Pediatría en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Pediatría.</h5>
               
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car7.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"> Oncología Médica en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Oncología.</h5>
               
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="" class="card-img-top margen-imagen" alt="...">
+            <img src="static/assets/images/car8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Oncología Radioterápica en todos nuestros centro de atencion.</h5>
+              <h5 class="card-title">Radiografía.</h5>
               
             </div>
           </div>
@@ -153,71 +131,9 @@
     </div>
   </div>
 
-  <hr>
 
   <!-- Pié de página -->
-  <footer class="footer-04">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-          <h3 class="footer-heading"><a >NOSOTROS</a></h3>
-          <p>Nuestro centro medico se caracteriza por tener una excelente atencion, 
-            nuestro nuevo modulo de agenda te facilita la atencion. Pruebalo te esperamos.</p>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-          <h2 class="footer-heading">Especialidades</h2>
-          <ul class="list-unstyled">
-            <li><a class="py-1 d-block">Cardiologia</a></li>
-            <li><a class="py-1 d-block">Endocrinología y Nutrición</a></li>
-            <li><a class="py-1 d-block">Geriatría</a></li>
-            <li><a class="py-1 d-block">Y más...</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-          <h2 class="footer-heading">Sucursales</h2>
-          <div class="tagcloud">
-            <a>Centro Medico Providencia </a>
-            <a>Centro Medico Quilicura </a>
-            <a>Centro Medico Huechuraba </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-          <h2 class="footer-heading">Suscribirse</h2>
-          <a href="{% url 'login' %}">Ir a registrarse</a>
-          <h2 class="footer-heading mt-5">Redes Sociales</h2>
-          <ul class="ftco-footer-social p-0">
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span
-                  class="ion-logo-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span
-                  class="ion-logo-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span
-                  class="ion-logo-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="w-100 mt-5 border-top py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-8">
-
-            <p class="copyright">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> IMG Software - Todos los derechos reservados
-              
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-            <p class="mb-0 list-unstyled">
-              <a class="mr-md-3" href="#">Terminos</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include './partials/_footer.html' %}
 
   <!-- Bootstrap y Javascripts -->
   <script src="static/assets/js/jquery.min.js"></script>
