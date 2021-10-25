@@ -67,7 +67,7 @@
                         class="nav-item {% if 'page-blank' in segment %} active {% endif %}">
                         <a href="/page-blank.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
                     <li data-username="Sample Page" class="nav-item"><a href="/page-404.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 404</span></a></li>-->
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-404.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-calendar"></i></span><span class="pcoded-mtext">Tomar Hora</span></a></li>
+                    <li data-username="Sample Page" class="nav-item"><a href="{% url 'page_agenda' %}" class="nav-link"><span class="pcoded-micon"><i class="feather icon-calendar"></i></span><span class="pcoded-mtext">Tomar Hora</span></a></li>
                     <li data-username="Disabled Menu" class="nav-item">
                         <a href="{% url 'logout' %}" class="nav-link">
                             <span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Salir</span>
