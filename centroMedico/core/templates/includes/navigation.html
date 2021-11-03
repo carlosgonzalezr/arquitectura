@@ -1,1 +1,107 @@
 <!-- NOT IMPLEMENTED -->
+<header class="navbar pcoded-header navbar-expand-lg navbar-light">
+    <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1"><span></span></a>
+        <a  class="b-brand">
+           <div>
+            <img src="/static/assets/images/logo-favicon.png" width="30px">
+           </div>
+           <span class="b-title">Centro Galenos</span>
+       </a>
+    </div>
+    <a class="mobile-menu" id="mobile-header">
+        <i class="feather icon-more-horizontal"></i>
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li><a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+            <li class="nav-item">
+                <div class="main-search open">
+                    <div class="input-group">
+                        <input type="text" id="m-search" class="form-control" placeholder="Buscar. . ." style="width: 90px;">
+                        <a href="#!" class="input-group-append search-close">
+                            <i class="feather icon-x input-group-text"></i>
+                        </a>
+                        <span class="input-group-append search-btn btn btn-primary">
+                            <i class="feather icon-search input-group-text"></i>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right notification">
+                        <div class="noti-head">
+                            <h6 class="d-inline-block m-b-0">Notificationes</h6>
+                        </div>
+                        <ul class="noti-body">
+                            <li class="n-title">
+                                <p class="m-b-0">Proxima Atención</p>
+                            </li>
+                            <li class="notification">
+                                <div class="media">
+                                    <img class="img-radius" src="https://appsrv1-147a1.kxcdn.com/dattaable-pro/images/user/avatar-1.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <p>
+                                            <strong>Juan Perez</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>05 min</span>
+                                        </p>
+                                        <p>BOX-34</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="n-title">
+                                <p class="m-b-0">Más Tarde</p>
+                            </li>
+                            <li class="notification">
+                                <div class="media">
+                                    <img class="img-radius" src="https://appsrv1-147a1.kxcdn.com/dattaable-pro/images/user/avatar-2.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <p><strong>Jorge Jofre</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+                                        <p>Atención BOX-25</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification">
+                                <div class="media">
+                                    <img class="img-radius" src="https://appsrv1-147a1.kxcdn.com/dattaable-pro/images/user/avatar-3.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <p><strong>Sara Carcamo</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>1 Hrs</span></p>
+                                        <p>Atención BOX-17</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="noti-footer">
+                            <a href="{% url 'page_agenda_medico' %}">Mostrar Todo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown drp-user">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon feather icon-settings"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-notification">
+                        <div class="pro-head">
+                            <img src="https://appsrv1-147a1.kxcdn.com/dattaable-pro/images/user/avatar-2.jpg" class="img-radius" alt="User-Profile-Image">
+                            <span>{{ request.user.username }}</span>
+                            <a href="{% url 'login' %}" class="dud-logout" title="Logout">
+                                <i class="feather icon-log-out"></i>
+                            </a>
+                        </div>
+                        <ul class="pro-body">
+                            <li><a href="#!" class="dropdown-item"><i class="feather icon-settings"></i> Ajustes</a></li>
+                            <li><a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Perfil</a></li>
+                            <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> Mis Mensajes</a></li>
+                            <!--<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>

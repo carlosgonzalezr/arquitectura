@@ -1,0 +1,79 @@
+{% extends "../layouts/base.html" %}
+
+{% block title %} Calendario {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+
+{% block content %}
+
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <!-- [ Hover-table ] start -->
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Historial de Horas</h5>
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Paciente</th>
+                                                <th scope="col">Medico</th>
+                                                <th scope="col">Fecha Inicio</th>
+                                                <th scope="col">Fecha Termino</th>
+                                                <th scope="col">Sucursal</th>
+                                                <th cope="col">Mantención</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for agendas in agenda %}
+                                            <tr>
+                                                <td>{{ agendas.paciente }}</td>
+                                                <td>{{ agendas.id_medico }}</td>
+                                                <td>{{ agendas.fecha_inicio }}</td>
+                                                <td>{{ agendas.fecha_termino }}</td>
+                                                <td>{{ agendas.sucursal }}</td>
+                                                <td><a href=""><img src="static/assets/images/imagen_editar.png"
+                                                            alt="Actualizar" /></a>
+                                                    <a href=""><img src="static/assets/images/eliminar.png"
+                                                            alt="Eliminar" /></a>
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ Hover-table ] end -->
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

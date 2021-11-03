@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.app',
-    'apps.pageprincipal'  # Enable the inner app
+    'apps.pageprincipal',
+    'apps.agenda'  # Enable the inner app
 ]
 
 MIDDLEWARE = [
