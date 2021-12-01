@@ -7,99 +7,86 @@
 
 
 {% block content %}
-<form>
+<div class="card" style="width: 50rem;">
+  <form>
     <h3>Datos Personales </h3>
-    <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre de Usuario </label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">nombre</label>
+      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="carlos rodriguez">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">edad</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="33">
     </div>
 
-    <div class="form-group row">
-        <label for="inputdire" class="col-sm-2 col-form-label">direccion</label>
-        <div class="col-sm-10">
-          <input  class="form-control" id="inputPassword3" >
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label for="inputdire" class="col-sm-2 col-form-label">teléfono</label>
-        <div class="col-sm-10">
-          <input  class="form-control" id="inputPassword3" >
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label for="inputdire" class="col-sm-2 col-form-label">celular</label>
-        <div class="col-sm-10">
-          <input  class="form-control" id="inputPassword3" >
-        </div>
-      </div>
-
-      <div class="form-group row">
-        <label for="inputdire" class="col-sm-2 col-form-label">alergias</label>
-        <div class="col-sm-10">
-          <input  class="form-control" id="inputPassword3" >
-        </div>
-      </div>
-      
-      
-    <div class="form-group row">
-        <label for="inputdire" class="col-sm-2 col-form-label">comuna</label>
-        <div class="col-sm-10">
-          <input  class="form-control" id="inputPassword3" >
-        </div>
-      </div>
-
-    </select>
-    <labelfor="inputdire" class="col-sm-2 col-form-label">estado civil</label>
-    <select class="form-control form-control-sm">
-      <option>Casado</option>
-      <option>Soltero</option>
-      <option>Viudo</option>
-      <option>Prefiero no decirlo</option>
-    </select>
-
-    <fieldset class="form-group">
-      <div class="row">
-        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              Hombre.
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Mujer.
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-            <label class="form-check-label" for="gridRadios3">
-              Otro.
-            </label>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Guardar Datos</button>
-      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">telefono</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+5421356851">
     </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">celular</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+569321352156">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">alergia</label>
+      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="polem">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">ciudad</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Santiago</option>
+        <option>Temuco</option>
+        <option>Arica</option>
+        <option>Iquique</option>
+        <option>Viña del mar</option>
+      </select>
+    </div>
+   
+    <div class="form-group">
+      <label for="exampleFormControlInput1">direccion</label>
+      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="av.peru">
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Estado civil</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Casado</option>
+        <option>Soltero</option>
+        <option>Viudo</option>
+
+      </select>
+    </div>
+
+    <div class="form-check form-check-inline">
+      <div >
+      <label for="exampleFormControlSelect1">Sexo</label>
+      </div>
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Hombre</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Mujer</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label" for="inlineRadio3">otro</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    </div>
+   
   </form>
-
-
+ 
+</div>
 {% endblock content %}
 
 
